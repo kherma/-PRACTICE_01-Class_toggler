@@ -23,6 +23,7 @@ addListenerToggler(overlayBackground);
 // Add class toggler to 'esc' key
 document.addEventListener('keydown', function(event){
     if(!modalWindow.classList.contains('hidden') && event.keyCode == 27) {
-        classToggler();
+        modalWindow.classList.toggle('hidden');
+        overlayBackground.classList.toggle('hidden');
     }
 });
