@@ -1,3 +1,5 @@
 # -PRACTICE_01-Class_toggler
 
-## Practice purpose only.
+## Practice Project - course project;
+## Side Project - personal project;
+## School Project - homework project;
