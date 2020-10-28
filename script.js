@@ -11,9 +11,16 @@ const classToggler = function() {
     overlayBackground.classList.toggle('hidden');
 }
 
+// Add class toggler to buttons
 for (let showModal of btnShowModal) {
     showModal.addEventListener('click', classToggler);
 }
-
 btnCloseModal.addEventListener('click', classToggler);
 overlayBackground.addEventListener('click', classToggler);
+
+// Add class toggler to esc key
+document.addEventListener('keydown', function(event){
+    if(!modalWindow.classList.contains('hidden') && event.keyCode == 27) {
+        classToggler();
+    }
+});
