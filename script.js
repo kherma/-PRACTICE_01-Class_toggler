@@ -5,17 +5,15 @@ const overlayBackground = document.querySelector('.overlay');
 const btnShowModal = document.querySelectorAll('.show-modal');
 const btnCloseModal = document.querySelector('.close-modal');
 
-// Add event listener to arg
-function hiddenToggler (btn) {
-    btn.addEventListener('click', function (){
-        modalWindow.classList.toggle('hidden');
-        overlayBackground.classList.toggle('hidden');
-    });
+// Toggle hidden class
+const classToggler = function() {
+    modalWindow.classList.toggle('hidden');
+    overlayBackground.classList.toggle('hidden');
 }
-
 
 for (let showModal of btnShowModal) {
-    hiddenToggler(showModal);
+    showModal.addEventListener('click', classToggler);
 }
-hiddenToggler(btnCloseModal);
-hiddenToggler(overlayBackground);
+
+btnCloseModal.addEventListener('click', classToggler);
+overlayBackground.addEventListener('click', classToggler);
