@@ -7,6 +7,7 @@ const btnCloseModal = document.querySelector('.close-modal');
 
 for (let showModal of btnShowModal) {
     showModal.addEventListener('click', function(){
-        console.log(showModal.textContent);
+        modalWindow.classList.remove('hidden');
+        overlayBackground.classList.remove('hidden');
     });
 }
