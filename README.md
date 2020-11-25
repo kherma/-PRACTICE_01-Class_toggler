@@ -1,5 +1,4 @@
 # -PRACTICE_01-Class_toggler
 
 ## Practice Project - course project;
-## Side Project - personal project;
-## School Project - homework project;
+## You can check it here: https://modest-pike-33e06c.netlify.app/
